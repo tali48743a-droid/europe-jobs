@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Europe Jobs for Foreign Workers | Find Jobs in Europe</title>
+  <meta name="description" content="Find European job opportunities for foreign workers. Search driver, warehouse, factory and visa sponsorship jobs across Europe.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">EUROPE<span>JOBS</span></div>
+
+  <nav>
+    <a href="#jobs">Jobs</a>
+    <a href="#countries">Countries</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="tag">EUROPE JOBS FOR FOREIGN WORKERS</p>
+
+    <h1>Find Your Next Job in Europe</h1>
+
+    <p class="hero-text">
+      Search driver, warehouse, factory, hospitality and other job opportunities across Europe.
+    </p>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search job title or company...">
+
+      <select id="countryFilter">
+        <option value="all">All Countries</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Romania">Romania</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Poland">Poland</option>
+        <option value="Germany">Germany</option>
+        <option value="Czech Republic">Czech Republic</option>
+      </select>
+
+      <button onclick="filterJobs()">Search Jobs</button>
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <h2>Find Jobs by Category</h2>
+
+  <div class="category-grid">
+    <button onclick="categoryFilter('Driver')">🚚 Driver Jobs</button>
+    <button onclick="categoryFilter('Warehouse')">📦 Warehouse Jobs</button>
+    <button onclick="categoryFilter('Factory')">🏭 Factory Jobs</button>
+    <button onclick="categoryFilter('Hotel')">🏨 Hotel Jobs</button>
+  </div>
+</section>
+
+<section id="jobs" class="jobs-section">
+
+  <div class="section-heading">
+    <div>
+      <p class="tag">LATEST OPPORTUNITIES</p>
+      <h2>Latest Jobs</h2>
+    </div>
+
+    <button class="visa-button" onclick="visaJobs()">
+      ✓ Visa Sponsorship
+    </button>
+  </div>
+
+  <div id="jobList" class="job-grid"></div>
+
+  <p id="noJobs" class="no-jobs">
+    No jobs found. Try another search.
+  </p>
+
+</section>
+
+<section id="countries" class="countries">
+  <p class="tag">EXPLORE EUROPE</p>
+  <h2>Popular Countries</h2>
+
+  <div class="country-grid">
+    <div>🇭🇺 Hungary</div>
+    <div>🇷🇴 Romania</div>
+    <div>🇷🇸 Serbia</div>
+    <div>🇵🇹 Portugal</div>
+    <div>🇭🇷 Croatia</div>
+    <div>🇵🇱 Poland</div>
+    <div>🇩🇪 Germany</div>
+    <div>🇨🇿 Czech Republic</div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <p class="tag">ABOUT US</p>
+  <h2>Helping Foreign Workers Find European Opportunities</h2>
+
+  <p>
+    Europe Jobs for Foreign Workers is an independent job-information
+    website designed to help international job seekers discover employment
+    opportunities in Europe.
+  </p>
+
+  <p>
+    Always verify job details, employment conditions and visa requirements
+    directly with the employer before applying.
+  </p>
+</section>
+
+<footer>
+  <div class="logo">EUROPE<span>JOBS</span></div>
+
+  <p>
+    Independent job information platform. We do not guarantee employment,
+    visas or recruitment.
+  </p>
+
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Disclaimer</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Europe Jobs for Foreign Workers
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
